@@ -1,0 +1,28 @@
+{
+  "name": "ucs-c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:bdsoha/UCS-C",
+  "author": "Dov Benyomin Sohacheski <b@kloud.email>",
+  "contributors": [
+    "Arthur A.",
+    "George Djabarov",
+    "Maor Yatskan"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bdsoha/UCS-C#readme",
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "download-git-repo": "^1.1.0",
+    "esprima": "^4.0.1",
+    "ignore": "^5.0.4",
+    "listr": "^0.14.3",
+    "require-glob": "^3.2.0",
+    "rxjs": "^6.3.3"
+  },
+  "engines" : { "node" : ">=10.0.0" }
+}
