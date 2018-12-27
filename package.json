@@ -1,28 +1,47 @@
 {
-  "name": "ucs-c",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "github:bdsoha/UCS-C",
-  "author": "Dov Benyomin Sohacheski <b@kloud.email>",
-  "contributors": [
-    "Arthur A.",
-    "George Djabarov",
-    "Maor Yatskan"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/bdsoha/UCS-C#readme",
-  "dependencies": {
-    "@adonisjs/ace": "^5.0.8",
-    "download-git-repo": "^1.1.0",
-    "esprima": "^4.0.1",
-    "ignore": "^5.0.4",
-    "listr": "^0.14.3",
-    "require-glob": "^3.2.0",
-    "rxjs": "^6.3.3"
-  },
-  "engines" : { "node" : ">=10.0.0" }
+    "name": "ucs-c",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prebuild": "rm -rf dist/",
+        "prepare": "npm run build",
+        "build": "tsc",
+        "lint": "tslint -p tsconfig.json --format codeFrame",
+        "test": "jest",
+        "start": "npm run build && node ."
+    },
+    "repository": "github:bdsoha/UCS-C",
+    "author": "Dov Benyomin Sohacheski <b@kloud.email>",
+    "contributors": [
+        "Arthur A.",
+        "George Djabarov",
+        "Maor Yatskan"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/bdsoha/UCS-C#readme",
+    "dependencies": {
+        "@adonisjs/ace": "^5.0.8",
+        "download-git-repo": "^1.1.0",
+        "esprima": "^4.0.1",
+        "ignore": "^5.0.4",
+        "listr": "^0.14.3",
+        "require-glob": "^3.2.0",
+        "rxjs": "^6.3.3"
+    },
+    "engines": {
+        "node": ">=10.13"
+    },
+    "devDependencies": {
+        "@types/esprima": "^4.0.2",
+        "@types/jest": "^23.3.10",
+        "@types/listr": "^0.13.0",
+        "@types/node": "^10.12.18",
+        "jest": "^23.6.0",
+        "ts-jest": "^23.10.5",
+        "ts-node": "^4.0.2",
+        "tslint": "^5.12.0",
+        "typescript": "^3.3.0-dev.20181222"
+    }
 }
